@@ -8,6 +8,7 @@ import { PassengerComponent } from './passenger/passenger.component';
 import { UsPublicComponent } from './us-public/us-public.component';
 import { UserInfoComponent } from './user-info/user-info.component';
 import { ProductComponent } from './product/product.component';
+import { UserComponent } from './user/user.component';
 
 
 const myRouter:Routes = [
@@ -27,6 +28,10 @@ const myRouter:Routes = [
   {
     path:"product",
     component:ProductComponent
+  },
+  {
+    path:"user",
+    component:UserComponent
   }
 ]
 
@@ -37,6 +42,7 @@ const myRouter:Routes = [
     UsPublicComponent,
     UserInfoComponent,
     ProductComponent,
+    UserComponent,
     
   ],
   imports: [
