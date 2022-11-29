@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { PassengerComponent } from './passenger/passenger.component';
 import { UsPublicComponent } from './us-public/us-public.component';
 
+
 const myRouter:Routes = [
   {
     path:"",
@@ -23,7 +24,8 @@ const myRouter:Routes = [
   declarations: [
     AppComponent,
     PassengerComponent,
-    UsPublicComponent
+    UsPublicComponent,
+    
   ],
   imports: [
     BrowserModule,
