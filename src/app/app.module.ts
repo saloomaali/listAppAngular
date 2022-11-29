@@ -5,18 +5,25 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PassengerComponent } from './passenger/passenger.component';
+import { UsPublicComponent } from './us-public/us-public.component';
 
 const myRouter:Routes = [
   {
     path:"",
     component:PassengerComponent
+
+  },
+  {
+    path:"us",
+    component:UsPublicComponent
   }
 ]
 
 @NgModule({
   declarations: [
     AppComponent,
-    PassengerComponent
+    PassengerComponent,
+    UsPublicComponent
   ],
   imports: [
     BrowserModule,
