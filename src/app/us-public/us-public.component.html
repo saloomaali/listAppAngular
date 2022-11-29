@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3 mt-4">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <td>Nation</td>
+                                <td>Year</td>
+                                <td>Population</td>
+                                <td>Slug Nation</td>
+                            </tr>
+                        </thead>
+                       
+                        <tr *ngFor = "let i of nation.data">
+                            <td>{{i.Nation}}</td>
+                            <td>{{i.Year}} </td>
+                            <td>{{i.Population}} </td>
+                            <td>{{i.SlugNation}} </td>
+                        </tr>
+                    </table>
+                </div>
+                
+            </div>
+        </div>
+    </div>
