@@ -1,3 +1,4 @@
+
 <app-navbar></app-navbar>
 <div class="container">
     <div class="row">
@@ -7,18 +8,18 @@
                     <table class="table">
                         <thead>
                             <tr>
-                                <td>Nation</td>
-                                <td>Year</td>
-                                <td>Population</td>
-                                <td>Slug Nation</td>
+                                <td>To Do</td>
+                                <td>Completed</td>
+                                <td>User Id</td>
+                                
                             </tr>
                         </thead>
                        
-                        <tr *ngFor = "let i of nation.data">
-                            <td>{{i.Nation}}</td>
-                            <td>{{i.Year}} </td>
-                            <td>{{i.Population}} </td>
-                            <td>{{i['Slug Nation']}}</td>
+                        <tr *ngFor = "let i of todo.todos">
+                            <td>{{i.todo}}</td>
+                            <td>{{i.completed}} </td>
+                            <td>{{i.userId}} </td>
+                            
                         </tr>
                     </table>
                 </div>
